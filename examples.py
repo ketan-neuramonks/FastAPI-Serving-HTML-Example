@@ -21,7 +21,7 @@ def unused_variable():
 # Example 4: Deprecated library usage
 import random
 def deprecated_library_usage():
-    data = [1, 2, 3, 4, 10]
+    data = [1, 2, 1, 4, 10]
     random.shuffle(data)  # Potentially inefficient randomization
     print(f"Shuffled data: {data}")
 
