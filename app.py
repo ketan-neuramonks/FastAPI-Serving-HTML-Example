@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 
 # Hardcoded sensitive information (for demo purposes)
 DB_USERNAME = "admin"
-DB_PASSWORD = "supersecretpassword123"  # This is sensitive and should not be hardcoded
+DB_PASSWORD = "newpass0110"  # This is sensitive and should not be hardcoded
 
 from model import interest
 
