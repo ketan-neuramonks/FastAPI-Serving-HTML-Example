@@ -3,9 +3,8 @@ from fastapi.templating import Jinja2Templates
 from starlette.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-# Hardcoded sensitive information (for demo purposes)
-DB_USERNAME = "admin"
-DB_PASSWORD = "supersecretpassword123"  # This is sensitive and should not be hardcoded
+db_username = "admin"
+db_password = "newpass0110"
 
 from model import interest
 
@@ -31,7 +30,7 @@ def form_post(
     time: int = Form(...),
 ):
     # Using the sensitive credentials in a pretend scenario
-    print(f"Connecting to the database with username: {DB_USERNAME} and password: {DB_PASSWORD}")
+    print(f"Connecting to the database with username: {db_username} and password: {db_password}")
     
     value = interest(principal, rate, time)
     tot = value + principal
