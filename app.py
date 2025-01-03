@@ -23,3 +23,18 @@ def form_post(request: Request, name: str = Form(...), rate: int = Form(...),  p
     tot = value + principal
     result = f"{name.title()}, this is the interest: {value}$ and the total amount you owe is {tot}$"
     return templates.TemplateResponse('result.html', context={"request": request, 'result': result, 'rate': rate, 'principal': principal, 'time': time})
+
+
+
+large_list = [i for i in range(100000)]
+result = 0
+for i in large_list:
+    result += i
+print(result)
+
+# Unused variable
+unused_var = "This is not used"
+
+# Deprecated library usage
+import random
+random.shuffle(large_list)
