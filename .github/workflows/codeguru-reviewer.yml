@@ -31,7 +31,7 @@ jobs:
       - name: CodeGuru Reviewer
         uses: aws-actions/codeguru-reviewer@v1.1
         with:
-          build_path: target # Update if your build artifacts are located in a different directory
+          build_path: . # Update if your build artifacts are located in a different directory
           s3_bucket: codeguru-reviewer-myactions-bucket10 # Your S3 bucket with "codeguru-reviewer-*" prefix
 
       # Step 4: Upload results into GitHub
